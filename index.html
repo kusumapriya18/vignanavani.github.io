@@ -1,53 +1,69 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vignanavani | Career & Interview Training</title>
-<meta name="description" content="Vignanavani provides practical interview preparation, resume building, LinkedIn and Naukri job-search training.">
+<title>VignanaVani | Career & Interview Training</title>
+<meta name="description" content="VignanaVani career training, resume building, job search and interview preparation.">
+
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{font-family:Arial,Helvetica,sans-serif;line-height:1.6;color:#172033;background:#f7f9fc}
-header{background:#101a3a;color:#fff;position:sticky;top:0;z-index:10}
-nav{max-width:1100px;margin:auto;display:flex;justify-content:space-between;align-items:center;padding:16px 20px}
-.logo{font-size:25px;font-weight:800;letter-spacing:.5px}
-nav a{color:#fff;text-decoration:none;margin-left:22px;font-size:14px}
-.hero{background:linear-gradient(135deg,#101a3a,#263b8f);color:white;padding:90px 20px}
+header{background:#101a3a;color:white;position:sticky;top:0;z-index:10}
+nav{max-width:1100px;margin:auto;padding:16px 20px;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.logo{font-size:24px;font-weight:800}
+nav a{color:white;text-decoration:none;margin-left:12px;font-size:14px}
+.hero{background:linear-gradient(135deg,#101a3a,#263b8f);color:white;padding:75px 20px}
 .hero-inner{max-width:1100px;margin:auto}
-.badge{display:inline-block;background:#ffffff20;border:1px solid #ffffff40;padding:7px 12px;border-radius:30px;margin-bottom:18px}
-h1{font-size:clamp(38px,6vw,64px);line-height:1.08;max-width:800px}
-.hero p{font-size:20px;max-width:700px;margin:22px 0}
-.btn{display:inline-block;padding:13px 21px;border-radius:8px;text-decoration:none;font-weight:700;margin:6px 8px 6px 0}
-.primary{background:#ffcf33;color:#101a3a}.secondary{border:1px solid #fff;color:#fff}
-section{max-width:1100px;margin:auto;padding:70px 20px}
-.section-title{text-align:center;margin-bottom:38px}
-.section-title h2{font-size:35px;color:#101a3a}
+.badge{display:inline-block;background:#ffffff20;border:1px solid #ffffff50;padding:7px 12px;border-radius:30px;margin-bottom:18px}
+h1{font-size:clamp(36px,6vw,60px);line-height:1.1;max-width:800px}
+.hero p{font-size:19px;max-width:700px;margin:22px 0}
+.btn{display:inline-block;padding:12px 20px;border-radius:8px;text-decoration:none;font-weight:bold;margin:6px 8px 6px 0;border:0;cursor:pointer}
+.primary{background:#ffcf33;color:#101a3a}
+.secondary{border:1px solid white;color:white}
+section{max-width:1100px;margin:auto;padding:60px 20px}
+.section-title{text-align:center;margin-bottom:35px}
+.section-title h2{font-size:33px;color:#101a3a}
 .section-title p{color:#667085}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.card{background:white;border-radius:14px;padding:25px;box-shadow:0 8px 30px #101a3a12;border:1px solid #e8ebf2}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.pricing-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin-top:25px}
+.card{background:white;border:1px solid #e8ebf2;border-radius:14px;padding:25px;box-shadow:0 8px 25px #101a3a12}
 .card h3{margin:10px 0;color:#101a3a}
 .icon{font-size:30px}
-.price{font-size:42px;font-weight:800;color:#101a3a;margin:15px 0}
-.highlight{background:#101a3a;color:white;border-radius:18px;padding:38px}
-.highlight h2{font-size:34px}
-ul{padding-left:20px;margin-top:15px}li{margin:8px 0}
+.highlight{background:#101a3a;color:white;border-radius:18px;padding:32px}
+.highlight h2{font-size:32px}
+.plan-duration{display:inline-block;background:#eef2ff;color:#263b8f;padding:5px 12px;border-radius:20px;font-weight:bold;font-size:14px}
+.price{font-size:40px;font-weight:800;color:#101a3a;margin:15px 0}
+ul{padding-left:20px;margin-top:15px}
+li{margin:8px 0}
 .contact{background:#eef2ff}
-form{max-width:650px;margin:auto;background:#fff;padding:28px;border-radius:14px;box-shadow:0 8px 30px #101a3a12}
+form{max-width:650px;margin:auto;background:white;padding:25px;border-radius:14px;box-shadow:0 8px 25px #101a3a12}
 input,textarea{width:100%;padding:13px;margin:7px 0 15px;border:1px solid #d7dce7;border-radius:7px;font:inherit}
-button{border:0;cursor:pointer}
 footer{background:#101a3a;color:#cdd4e8;text-align:center;padding:28px 20px}
-.whatsapp{position:fixed;right:20px;bottom:20px;background:#20c66b;color:white;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:27px;box-shadow:0 8px 20px #0003;z-index:20}
-@media(max-width:750px){nav{flex-direction:column;gap:10px}nav a{margin:0 7px}.grid{grid-template-columns:1fr}.hero{padding:65px 20px}section{padding:50px 20px}}
+.whatsapp{position:fixed;right:20px;bottom:20px;background:#20c66b;color:white;width:55px;height:55px;border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:25px;z-index:20}
+@media(max-width:750px){
+nav{flex-direction:column}
+nav a{margin:0 6px}
+.grid,.pricing-grid{grid-template-columns:1fr}
+.hero{padding:55px 20px}
+section{padding:42px 20px}
+.highlight{padding:20px}
+}
 </style>
 </head>
-<body>
 
+<body>
 <header>
 <nav>
 <div class="logo">VIGNANAVANI</div>
 <div>
-<a href="#home">Home</a><a href="#training">Training</a><a href="#fees">Fees</a><a href="#about">About</a><a href="#contact">Contact</a>
+<a href="#home">Home</a>
+<a href="#training">Training</a>
+<a href="#fees">Plans</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
 </div>
 </nav>
 </header>
@@ -55,76 +71,136 @@ footer{background:#101a3a;color:#cdd4e8;text-align:center;padding:28px 20px}
 <main>
 <section class="hero" id="home">
 <div class="hero-inner">
-<span class="badge">1-Week Practical Career Training</span>
+<span class="badge">New Batch Starts 15th October</span>
 <h1>Build Your Profile. Prepare Better. Get Job-Ready.</h1>
-<p>Practical training for interview preparation, resume building, LinkedIn optimization, Naukri job search and career strategy.</p>
-<a class="btn primary" href="#contact">Join the Training</a>
-<a class="btn secondary" href="https://wa.me/919581334232?text=Hi%20Vignanavani,%20I%20am%20interested%20in%20the%201-week%20training." target="_blank">WhatsApp Us</a>
+<p>Practical training in resume building, interview preparation, LinkedIn optimization, Naukri job search and career development.</p>
+<a class="btn primary" href="#fees">View Training Plans</a>
+<a class="btn secondary" href="https://wa.me/919581334232" target="_blank" rel="noopener">WhatsApp Us</a>
 </div>
 </section>
 
 <section id="training">
-<div class="section-title"><h2>What You Will Learn</h2><p>A focused one-week program designed around practical job searching.</p></div>
+<div class="section-title">
+<h2>What You Will Learn</h2>
+<p>Practical guidance to improve your profile and interview readiness.</p>
+</div>
 <div class="grid">
-<div class="card"><div class="icon">🎯</div><h3>Interview Preparation</h3><p>Understand interview strategy, common questions, self-introduction, technical/HR preparation and mock interviews.</p></div>
-<div class="card"><div class="icon">📄</div><h3>Resume Building</h3><p>Create a professional, ATS-friendly resume that highlights skills, projects and experience clearly.</p></div>
-<div class="card"><div class="icon">💼</div><h3>LinkedIn Profile</h3><p>Optimize your headline, About section, skills and profile so recruiters can understand your value quickly.</p></div>
-<div class="card"><div class="icon">🔎</div><h3>LinkedIn Job Search</h3><p>Learn how to search relevant jobs, identify suitable roles and approach recruiters professionally.</p></div>
-<div class="card"><div class="icon">📱</div><h3>Naukri Job Search</h3><p>Learn practical profile optimization, keyword usage, job filtering and application strategy.</p></div>
-<div class="card"><div class="icon">🗣️</div><h3>Mock Interview</h3><p>Practice your answers and receive guidance to improve confidence, communication and presentation.</p></div>
+<div class="card">
+<div class="icon">🎯</div>
+<h3>Interview Preparation</h3>
+<p>Prepare your self-introduction, HR answers, technical questions and interview strategy.</p>
+</div>
+<div class="card">
+<div class="icon">📄</div>
+<h3>Resume Building</h3>
+<p>Create a professional, ATS-friendly resume highlighting your skills and experience.</p>
+</div>
+<div class="card">
+<div class="icon">💼</div>
+<h3>LinkedIn Optimization</h3>
+<p>Improve your headline, About section, skills and professional profile.</p>
+</div>
+<div class="card">
+<div class="icon">🔎</div>
+<h3>Job Search Strategy</h3>
+<p>Learn to find relevant vacancies and approach recruiters professionally.</p>
+</div>
+<div class="card">
+<div class="icon">📱</div>
+<h3>Naukri Profile</h3>
+<p>Improve profile keywords, job preferences and application strategy.</p>
+</div>
+<div class="card">
+<div class="icon">🗣️</div>
+<h3>Mock Interviews</h3>
+<p>Practice answering questions and improve confidence and communication.</p>
+</div>
 </div>
 </section>
 
+<!-- ONLY TWO TRAINING PLANS -->
 <section id="fees">
 <div class="highlight">
-<h2>1-Week Career Training Program</h2>
-<p>Everything you need to improve your job-search profile and interview readiness.</p>
-<div class="grid">
-<div class="card"><h3>Basic</h3><div class="price">₹1,499</div><ul><li>Resume Building</li><li>LinkedIn Profile</li><li>Naukri Profile</li></ul></div>
-<div class="card"><h3>Standard</h3><div class="price">₹1,999</div><ul><li>Basic Package +</li><li>LinkedIn Job Search</li><li>Recruiter Outreach</li><li>Job Application Strategy</li></ul></div>
-<div class="card"><h3>Premium</h3><div class="price">₹2,999</div><ul><li>Complete 1 Week Training</li><li>Interview Preparation</li><li>Mock Interview</li><li>Personal Feedback</li></ul></div>
-</div>
-<br>
+<h2>Our Training Plans</h2>
+<p>Classes start from <strong>15th October</strong>. Choose your plan.</p>
+
+<div class="pricing-grid">
+<div class="card">
+<span class="plan-duration">7 Days</span>
+<h3>Standard Plan</h3>
+<div class="price">₹1,499</div>
+<ul>
+<li>Resume building</li>
+<li>LinkedIn profile optimization</li>
+<li>Naukri profile optimization</li>
+<li>LinkedIn job search and recruiter outreach</li>
+<li>Job application strategy</li>
+</ul>
 <a class="btn primary" href="#contact">Enquire Now</a>
+</div>
+
+<div class="card">
+<span class="plan-duration">10 Days</span>
+<h3>Premium Plan</h3>
+<div class="price">₹2,499</div>
+<ul>
+<li>Everything included in Standard</li>
+<li>Interview preparation</li>
+<li>Mock interview practice</li>
+<li>Personal feedback and guidance</li>
+<li>Additional training days for practice</li>
+</ul>
+<a class="btn primary" href="#contact">Enquire Now</a>
+</div>
+</div>
 </div>
 </section>
 
 <section id="about">
-<div class="section-title"><h2>About Vignanavani</h2></div>
+<div class="section-title"><h2>About VignanaVani</h2></div>
 <div class="card">
-<p><strong>Vignanavani</strong> focuses on practical career and interview preparation. Our goal is to help job seekers present their skills professionally, search for the right opportunities and prepare confidently for interviews.</p>
+<p><strong>VignanaVani</strong> focuses on practical career and interview preparation. Our goal is to help job seekers present their skills professionally, find relevant opportunities and prepare confidently for interviews.</p>
 </div>
 </section>
 
 <section id="contact" class="contact">
-<div class="section-title"><h2>Contact Vignanavani</h2><p>Send your details and we will get in touch.</p></div>
+<div class="section-title">
+<h2>Contact VignanaVani</h2>
+<p>Send your details to enquire about a training plan.</p>
+</div>
 <form onsubmit="sendWhatsApp(event)">
-<label>Name</label><input id="name" required placeholder="Your name">
-<label>Phone</label><input id="phone" required placeholder="Your phone number">
-<label>Message</label><textarea id="message" rows="4" placeholder="What training are you interested in?"></textarea>
+<label for="name">Name</label>
+<input id="name" required placeholder="Your name">
+<label for="phone">Phone</label>
+<input id="phone" type="tel" required placeholder="Your phone number">
+<label for="message">Message</label>
+<textarea id="message" rows="4" placeholder="Which plan are you interested in?"></textarea>
 <button class="btn primary" type="submit">Send Enquiry on WhatsApp</button>
 </form>
 </section>
 </main>
 
-<a class="whatsapp" href="https://wa.me/919581334232" target="_blank" aria-label="WhatsApp">◉</a>
+<a class="whatsapp" href="https://wa.me/919581334232" target="_blank" rel="noopener" aria-label="WhatsApp">◉</a>
 
 <footer>
 <p><strong>VIGNANAVANI</strong></p>
 <p>Career & Interview Training</p>
-<p>Call / WhatsApp: 9581334232</p><p>Instagram: @vignanavaani</p><p>Email: vignanavaani03@gmail.com</p>
-<p>© 2026 Vignanavani. All rights reserved.</p>
+<p>Call / WhatsApp: 9581334232</p>
+<p>Instagram: @vignanavaani</p>
+<p>Email: vignanavaani03@gmail.com</p>
+<p>© 2026 VignanaVani. All rights reserved.</p>
 </footer>
 
 <script>
-function sendWhatsApp(e){
- e.preventDefault();
- const name=document.getElementById('name').value;
- const phone=document.getElementById('phone').value;
- const message=document.getElementById('message').value;
- const text=`Hi Vignanavani, I want to enquire about the training.%0AName: ${encodeURIComponent(name)}%0APhone: ${encodeURIComponent(phone)}%0AMessage: ${encodeURIComponent(message)}`;
- window.open(`https://wa.me/919581334232?text=${text}`,'_blank');
+function sendWhatsApp(event){
+event.preventDefault();
+const name=document.getElementById("name").value;
+const phone=document.getElementById("phone").value;
+const message=document.getElementById("message").value;
+const text="Hi VignanaVani, I want to enquire about the training.\nName: "+name+"\nPhone: "+phone+"\nMessage: "+message;
+window.open("https://wa.me/919581334232?text="+encodeURIComponent(text),"_blank");
 }
 </script>
 </body>
 </html>
+
